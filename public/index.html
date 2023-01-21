@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="style/main.css">
 </head>
 
-<body class="min-h-screen  bg-slate-50 dark:bg-black dark:text-white  ">
+<body class="min-h-screen no-scrollbar bg-slate-50 dark:bg-black dark:text-white  ">
     <!-- Header::start -->
-    <header class=" bg-teal-300 text-cyan-50 sticky top-0 z-10">
+    <header class=" bg-slate-800 text-cyan-50 sticky top-0 z-10">
         <!-- section::start -->
         <section class=" max-w-7xl mx-auto p-4 flex justify-between items-center">
-            <h1 class=" text-3xl   font-bold">
+            <h1 class=" sm:text-3xl  text-sm font-bold">
                 <!-- logo::start -->
                 <a href="#" class="inline-flex">
-                    <img class=" ml-4 p-2 w-20 h-20" src="media/logo/thumb-ucon360-red.png" alt="Ucon">
+                    <img class=" ml-4 p-2  sm:w-20 md:h-20 w-16 h-16" src="media/logo/thumb-ucon360-red.png" alt="Ucon">
                     <span class="pt-6">UCon360</span>
                 </a>
                 <!-- logo::end -->
@@ -49,8 +49,29 @@
     </header>
     <!--Header::end  -->
     <!-- main::start -->
-    <main class="max-w-4xl mx-auto">
-        section
+    <main class="max-w-full mx-auto overflow-hidden">
+        <!-- poster::start -->
+        <div class=" bg-cover poster bg-[url('/media/image/backround.jpg')]">
+            <!-- overlay::start -->
+            <div class=" overlay bg-black w-screen opacity-90 h-fit">
+                
+                <section id="hero" class="flex flex-col-revers  sm:flex-row p-6 items-center gap-8 mb12">
+                    <!-- slogan::start -->
+                    <article class="mt-32 ml-32">
+                        <h2 class="  max-w-md text-sm font-bold text-left 
+                        sm:text-7xl sm:text-left  sm:w-96 text-slate-900
+                        dark:text-white">Make Your <br> Operations </br></h2>
+                        <h2 class=" max-w-md text-sm font-bold text-left 
+                        sm:text-7xl sm:text-left  text-blue-900  dark:text-blue-900">Smarter </h2>
+                        
+                    </article>
+                            <!-- slogan:end -->
+
+                </section>
+            </div>
+           
+        </div>
+        
     </main>
     <!-- main::end -->
 
